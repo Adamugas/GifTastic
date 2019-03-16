@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/echiang-brand.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Hawaii GifTastic</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-3 mb-2 bg-transparent text-light fullTitle">
+            <!-- <h1>Hawaii Gif Search</h1> -->
+            <div class="inlineTitle">
+                <div id=titleRed>Ha</div>
+                <div id=titleOra>wai</div>
+                <div id=titleYel>i G</div>
+                <div id=titleGre>if S</div>
+                <div id=titleBlu>ea</div>
+                <div id=titleInd>rc</div>
+                <div id=titleVio>h</div>
+            </div>
+        </div>
+        <img src="assets/images/PoweredByGIPHY.gif" id="GIPHYlogo">
+        <div class="p-3 mb-2 bg-transparent text-light">
+            <h5 id="instructions">
+                Do you just need a quick mental break and reminise about a tropical getaway in Hawaii? <br>Then have fun watching these animated gifs from GIPHY.com's powerful gif search.
+            </h5>
+            <h6 class="">Click on a topic button to display gifs: </h6>
+
+            <!-- Rendered Buttons will get Dumped Here  -->
+            <div id="buttons-view"></div><br />
+            <h6 class="">Or create your own topic button:</h6>
+            <form id="search-form">
+                <label for="search-input"></label>
+                <div class="inputWithIcon">
+                    <input type="text" id="search-input" placeholder="Enter a new search">
+                    <i class="fas fa-search fa-lg fa-fw" aria-hidden="true" id="add-search" type="submit"
+                        value="add me"></i>
+                </div>
+            </form>
+            <br>
+            <h6 class="">Click on gif to animate or click again to make still!</h6>
+        </div>
+
+        <!-- Gifs will Get Dumped Here -->
+        <div class="gif-container">
+            <div class="row" id="gifs-view"></div>
+        </div>
+    </div>
+
+  
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    <!-- <audio src="assets/sound/somewheretrim.mp3" type="audio/mpeg"></audio> -->
+
+    <!-- <audio id="myAudio" autoplay>
+        <source src="assets/sound/somewheretrim.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> -->
+</body>
+
+</html>

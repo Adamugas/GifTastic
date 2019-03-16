@@ -1,0 +1,174 @@
+@font-face {
+    font-family:"tiki-tropic-font";
+    src: url(../font/TikiTropic.ttf);
+}
+body{
+    /* background: url(../images/kapalua-bay-besthawaii0216.jpg) no-repeat center fixed; */
+    background-image: url(../images/kapalua-bay-besthawaii0216.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f4b87c;
+}
+form{
+    margin-top: -25px;
+}
+#instructions{
+    color:yellow;
+    text-align: center;
+}
+/* this is for the new search box */
+input[type=text]{ 
+    /* width: 100%; */
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    margin:4px 0px;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+/* this is for the entire new search box with icon */
+.inputWithIcon input[type=text]{
+    /* padding-left: 40px; */
+}
+/* this is the entire row for the new search box with icons */
+.inputWithIcon{
+    position: relative;
+}
+/* to manipulate the font awesome icon */
+.inputWithIcon i{ 
+    position: absolute;
+    left: 0;
+    top: 15px;
+    /* padding:9px 8px; */ /* what is this? it's causing the gray padding*/
+    margin-left: 150px; /* will push icon to the right */
+    border-radius: 10px; /* added, doesn't seem to do anything to the icon */
+    color: #aaa;
+    transition: 0.5s;
+    /* border: 10px solid green; */
+}
+.inputWithIcon input[type=text]:focus + i{
+    color: dodgerblue;
+}
+.fullTitle{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: "tiki-tropic-font";
+    font-size: 60px;
+    margin-top: -20px;
+}
+.inlineTitle{
+    display: flex;
+}
+#titleRed{
+    color: red;
+}
+#titleOra{
+    color: orange;
+}
+#titleYel{
+    color: yellow;
+}
+#titleGre{
+    color: green;
+}
+#titleBlu{
+    color: darkblue;
+}
+#titleInd{
+    color: indigo;
+}
+#titleVio{
+    color: blueviolet;
+}
+#GIPHYlogo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+.topic-btn{
+    border-radius: 8px;
+    padding: 5px;
+    margin-right: 8px;
+    background-color: #f4b87c;
+    border: 2px solid blue;
+    color: blue;
+    margin-bottom: 10px;
+}
+.gif-container{
+    margin: -20px 0 0 30px;
+}
+.newGif{
+    text-align: center;
+    background-color: #f4b87c;
+    width: 200px;
+    border: 2px solid blue;
+}
+.image{
+    margin: -10px 20px 20px 0;
+}
+footer {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    clear: both;
+    overflow: auto;
+    background:black;
+    color: #f4b87c;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 4px solid blue;
+    /* to make a sticky footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.footer > a{
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #f4b87c;
+}
+
+/* Medium devices (landscape tablet, 1080px) */
+@media only screen and (max-width: 1080px) {
+    body{
+        background-image: url('../images/kapalua-bay-besthawaii0216alt.jpg');
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #f4b87c;
+    }
+  } 
+
+/* Small devices (portrait phone, 520px) */
+@media only screen and (max-width: 520px) {
+    body{
+        background-image: url('../images/kapalua-bay-besthawaii0216alt2.jpg');
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #f4b87c;
+    }
+    .fullTitle{
+        font-size: 40px;
+    }
+    #instructions{
+        font-size: 14px;
+    }
+  } 
